@@ -1,8 +1,8 @@
 <script>
 	export let name;
 	import Slider from './Slider/Slider.svelte'
-</script>
 
+</script>
 <main>
 	<Slider />
 	<h1>Hello {name}!</h1>
