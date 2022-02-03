@@ -1,0 +1,9 @@
+.container-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+.container-cards div {
+    width: 30%;
+}
