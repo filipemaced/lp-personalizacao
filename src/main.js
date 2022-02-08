@@ -1,7 +1,9 @@
 import App from './App.svelte';
 
+const target = document.getElementById("landing-personalizacao")
+
 const app = new App({
-	target: document.body,
+	target: target,
 	props: {
 		name: 'world'
 	}
