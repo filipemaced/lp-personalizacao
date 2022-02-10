@@ -106,9 +106,9 @@ npm run build
 surge public my-project.surge.sh
 ```
 # lp-personalizacao
-```
-use this config in mais js
 
+use this config in main.js
+```
 import App from './App.svelte';
 
 const target = document.getElementById("landing-personalizacao")
