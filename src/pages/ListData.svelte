@@ -5,7 +5,7 @@
     import './ListData.css'
     export let sports;
     let slidesPerViewConf = sports.length > 3 ? 4 : 1;
-    let slidesPerViewConfMob = sports.length > 3 ? 2 : 1;
+    let slidesPerViewConfMob = sports.length > 3 ? 3 : 1;
 
 </script>
 
@@ -13,8 +13,8 @@
 modules={[Navigation, Scrollbar, A11y]}
 breakpoints={{
     "640": {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 2,
+      spaceBetween: 10,
     },
     "868": {
       slidesPerView: slidesPerViewConfMob,
@@ -35,7 +35,7 @@ on:swiper={(e) => console.log(e.detail[0])}
     <SwiperSlide class="card-pesonalizacao">
         <a href="{products.href}">
             <img src={products.src} alt={products.title}>
-            <p>{products.brand}</p>
+            <span>{products.brand}</span>
             <h6>{products.title}</h6>
             <p>{products.price}€</p>
         </a>

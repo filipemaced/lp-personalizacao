@@ -32,6 +32,7 @@
 <Swiper 
     class="banner-principal"
     modules={[Navigation, Pagination, Scrollbar, A11y]}
+    loop={true}
     spaceBetween={50}
     slidesPerView={1}
     navigation
