@@ -2,9 +2,8 @@
     import { Navigation, Scrollbar, A11y } from 'swiper';
     import { Swiper, SwiperSlide } from 'swiper/svelte';
 
-    import './ListData.css'
     export let sports;
-    let slidesPerViewConf = sports.length > 3 ? 4 : 1;
+    let slidesPerViewConf = sports.length >= 2 ? 4 : 1;
     let slidesPerViewConfMob = sports.length > 3 ? 3 : 1;
 
 </script>
@@ -27,8 +26,6 @@ breakpoints={{
   }}
 navigation
 scrollbar={{ draggable: true }}
-on:slideChange={() => console.log('slide change')}
-on:swiper={(e) => console.log(e.detail[0])}
 >
 
 {#each sports as products, i}

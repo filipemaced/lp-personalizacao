@@ -13,19 +13,19 @@
 
   let images = [
     {
-      src: "https://cdn.decathlon.pt/lp/2022/economiacircular/img/main-header.jpg",
+      src: "https://cdn.decathlon.pt/landings/personalizacao/img/decatlhon-personalizacao.jpg",
       alt: "container-fitness",
-      text: "A tua personalização perferida"
+      text: "Personalização Decathlon"
     },
     {
-      src: "https://cdn.decathlon.pt/lp/2022/economiacircular/img/main-header.jpg",
+      src: "https://cdn.decathlon.pt/landings/personalizacao/img/personalizacao-tacas.jpg",
       alt: "container-fitness",
-      text: "A tua perferida"
+      text: "Torna os teus artigos de desporto únicos!"
     },
     {
-      src: "https://cdn.decathlon.pt/lp/2022/economiacircular/img/main-header.jpg",
+      src: "https://cdn.decathlon.pt/landings/personalizacao/img/personalizacao-mulher.jpg",
       alt: "container-fitness",
-      text: "A tua personalização "
+      text: "Personalização do teu material desportivo"
     }
   ];
 </script>
@@ -38,8 +38,6 @@
     navigation
     pagination={{ clickable: true }}
     scrollbar={{ draggable: true }}
-    on:slideChange={() => console.log("slide change")}
-    on:swiper={(e) => console.log(e.detail[0])}
     >
     {#each images as image, i}
         <SwiperSlide>

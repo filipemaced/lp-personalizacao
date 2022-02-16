@@ -1,0 +1,53 @@
+.banner-secundario {
+    width: 70%;
+    height: 600px;
+}
+.banner-secundario a:hover {
+    text-decoration: none;
+}
+.banner-back-sec {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+.text { 
+    margin: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.text h2 {
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+}
+.text p {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    background-color: #FFEA29;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+.text p::after {
+    content: ">";
+    position: absolute;
+    right: 8px;
+}
+.text p:hover {
+    background-color: #fff597;
+}
+@media only screen and (max-width:900px) {
+    .banner-secundario {
+        width: 100%;
+    }
+}
