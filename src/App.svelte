@@ -75,6 +75,8 @@
 			</div>
 		</div>
 	</div>
+	<Caroussel />
+	<Stickers />
 	<Banner />
 	<nav class="nav-item">
 		{#each nav as navItem, i}
@@ -86,8 +88,7 @@
 			<svelte:component this={viewportComponent} />
 		</div>
 	{/if}
-	<Caroussel />
-	<Stickers />
+	
 	<Ratings />
 </main>
 <style>

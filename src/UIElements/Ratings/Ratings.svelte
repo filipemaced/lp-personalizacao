@@ -78,4 +78,9 @@
     .img-ratings img {
         width: 50px;
     }
+    @media (max-width: 900px) {
+        .container-ratings {
+            flex-direction: column;
+        }
+    }
 </style>
