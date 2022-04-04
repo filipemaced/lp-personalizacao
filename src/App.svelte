@@ -78,7 +78,7 @@
 	<Caroussel />
 	<Stickers />
 	<Banner />
-	<nav class="nav-item">
+<!-- 	<nav class="nav-item">
 		{#each nav as navItem, i}
 			<div class:selected="{current === i}" on:click={() => toggleView(i)}>{navItem.label}</div>
 		{/each}
@@ -87,7 +87,7 @@
 		<div id="viewport" on:outroend={updateViewportComponent} transition:fade>
 			<svelte:component this={viewportComponent} />
 		</div>
-	{/if}
+	{/if} -->
 	
 	<Ratings />
 </main>
